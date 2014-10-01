@@ -1,8 +1,9 @@
+
 import java.util.*;
 
 public class Client {
 	{
-	this.order = new ArrayList<Order>();
+	this.orders = new ArrayList<Order>();
 	}
 	private String name;
 	private String surname;
@@ -13,8 +14,7 @@ public class Client {
 	private String postalcode;
 	private String country;
 	private User user;
-	private List<Order> order;
-	
+	private List<Order> orders;
 	public String getName() {
 		return name;
 	}
@@ -69,11 +69,11 @@ public class Client {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	public List<Order> getOrder() {
-		return order;
+	public List<Order> getOrders() {
+		return orders;
 	}
-	public void setOrder(List<Order> order) {
-		this.order = order;
+	public void setOrders(List<Order> orders) {
+		this.orders = orders;
 	}
 	
 	
