@@ -1,5 +1,6 @@
+package domain;
 
-public class Order {
+public class Order extends Entity {
 	
 	private String orderID;
 	private String date;

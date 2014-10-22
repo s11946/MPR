@@ -1,10 +1,14 @@
+package domain;
 
 import java.util.*;
 
-public class Client {
-	{
-	this.orders = new ArrayList<Order>();
+public class Client extends Entity {
+	
+	public Client(){
+		super();
+		this.orders = new ArrayList<Order>();
 	}
+	
 	private String name;
 	private String surname;
 	private String company;
@@ -15,6 +19,7 @@ public class Client {
 	private String country;
 	private User user;
 	private List<Order> orders;
+	
 	public String getName() {
 		return name;
 	}
