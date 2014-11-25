@@ -1,6 +1,6 @@
 package domain;
 
-public class Sail {
+public class Sail extends Entity {
 	
 	private String name;
 	private String type;

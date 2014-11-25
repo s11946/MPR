@@ -2,7 +2,7 @@ package domain;
 
 import java.util.*;
 
-public class Privilege {
+public class Privilege extends Entity {
 	
 	private String name;
 	private List<Role> roles;

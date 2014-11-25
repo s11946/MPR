@@ -1,11 +1,12 @@
 package repositories.impl;
 
 import domain.Client;
+import domain.Role;
 import repositories.*;
 
 public class DummyRepositoryCatalog implements IRepositoryCatalog {
 
-	private DummyDb db = new DummyDb();
+	 DummyDb db = new DummyDb();
 	
 	@Override
 	public IUserRepository getUsers() {
@@ -15,6 +16,11 @@ public class DummyRepositoryCatalog implements IRepositoryCatalog {
 	@Override
 	public IRepository<Client> getClient() {
 		return new DummyClientRepository(db);
+	}
+
+	@Override
+	public IRepository<Role> getRoles() {
+		return new DummyRoleRepository(db);
 	}
 
 }

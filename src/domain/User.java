@@ -39,6 +39,8 @@ public class User extends Entity{
 	}
 	public void setClient(Client client) {
 		this.client = client;
+		if(!this.equals(client.getUser()))
+			client.setUser(this);
 	}
 	
 	

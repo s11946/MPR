@@ -12,7 +12,6 @@ public class DummyUserRepostiory implements IUserRepository {
 	private DummyDb db;
 	
 	public DummyUserRepostiory(DummyDb db){
-		super();
 		this.db = db;
 	}
 
